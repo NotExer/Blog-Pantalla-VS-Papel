@@ -122,9 +122,9 @@ export default function App() {
         <div className="wrap">
           <div className="art-hd">
             <div className="art-cat">Ensayo · Narrativas digitales</div>
-            <h1 className="art-title">La pantalla gana, pero no por el espectáculo</h1>
+            <h1 className="art-title">La pantalla gana, no por lo teconologico</h1>
             <p className="art-lead">
-              Por qué la narrativa digital argumenta mejor que la tradicional —y por qué el universo transmedia de Harry Potter no tiene nada que ver con eso.
+              Por qué la narrativa digital argumenta mejor que la tradicional
             </p>
             <div className="art-meta">
               <span>Samuel Gomez Restrepo</span><span className="dot">·</span>

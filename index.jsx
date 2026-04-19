@@ -15,41 +15,57 @@ const css = `
 .site-hd{border-bottom:1px solid var(--faint);padding:16px 0;text-align:center;background:var(--bg)}
 .site-name{font-family:var(--fd);font-size:12px;letter-spacing:.35em;text-transform:uppercase;color:var(--accent)}
 .site-sub{font-size:10px;color:var(--muted);letter-spacing:.18em;text-transform:uppercase;margin-top:3px}
-.art-hd{padding:48px 0 36px;border-bottom:1px solid var(--faint)}
-.art-cat{font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:var(--accent);margin-bottom:16px}
-.art-title{font-family:var(--fd);font-size:clamp(1.7rem,4vw,2.7rem);line-height:1.15;font-weight:700;margin-bottom:16px;color:var(--text)}
-.art-lead{font-size:1.1rem;color:var(--muted);line-height:1.65;font-style:italic;margin-bottom:24px;font-family:var(--fb)}
+.art-hd{padding:48px 0 32px;border-bottom:1px solid var(--faint)}
+.art-cat{font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.art-title{font-family:var(--fd);font-size:clamp(1.7rem,4vw,2.7rem);line-height:1.15;font-weight:700;margin-bottom:14px;color:var(--text)}
+.art-lead{font-size:1.1rem;color:var(--muted);line-height:1.6;font-style:italic;margin-bottom:22px;font-family:var(--fb)}
 .art-meta{display:flex;align-items:center;gap:12px;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);flex-wrap:wrap}
 .dot{color:var(--accent)}
-.art-body{padding:40px 0;font-size:1.1rem;line-height:1.88;color:var(--text);font-family:var(--fb)}
-.art-body p{margin-bottom:1.4em}
-.art-body p:first-of-type::first-letter{font-family:var(--fd);font-size:4.2rem;font-weight:900;float:left;line-height:.75;margin:8px 10px -4px 0;color:var(--accent)}
-.art-body h2{font-family:var(--fd);font-size:1.25rem;font-weight:700;margin:2.5em 0 .9em;padding-bottom:7px;border-bottom:1px solid var(--faint);color:var(--text)}
-.pull{border-left:3px solid var(--accent);padding:4px 0 4px 20px;margin:2em 0;font-family:var(--fd);font-size:1.15rem;font-style:italic;color:var(--accent);line-height:1.55}
-.refs{border-top:1px solid var(--faint);padding:24px 0 8px}
-.refs-title{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.art-body{padding:36px 0;font-size:1.1rem;line-height:1.88;color:var(--text);font-family:var(--fb)}
+.art-body p{margin-bottom:1.3em}
+.art-body p:first-of-type::first-letter{font-family:var(--fd);font-size:4rem;font-weight:900;float:left;line-height:.75;margin:8px 10px -4px 0;color:var(--accent)}
+.art-body h2{font-family:var(--fd);font-size:1.2rem;font-weight:700;margin:2.2em 0 .8em;padding-bottom:7px;border-bottom:1px solid var(--faint);color:var(--text)}
+.pull{border-left:3px solid var(--accent);padding:4px 0 4px 18px;margin:1.8em 0;font-family:var(--fd);font-size:1.1rem;font-style:italic;color:var(--accent);line-height:1.55}
+.tbl-wrap{overflow-x:auto;margin:1.6em 0}
+table{width:100%;border-collapse:collapse;font-size:.92rem;font-family:var(--fb)}
+th{background:var(--surface2);color:var(--accent);font-family:var(--fd);font-weight:700;padding:9px 13px;text-align:left;border-bottom:2px solid var(--faint);font-size:.9rem}
+td{padding:8px 13px;border-bottom:1px solid var(--faint);color:var(--text);vertical-align:top;line-height:1.5}
+tr:last-child td{border-bottom:none}
+td:first-child{color:var(--muted);font-style:italic}
+.media-box{margin:2em 0}
+.media-label{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+.video-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border:1px solid var(--faint)}
+.video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.info-card{background:var(--surface);border:1px solid var(--faint);padding:13px 15px}
+.info-card-title{font-family:var(--fd);font-size:.86rem;font-weight:700;color:var(--accent);margin-bottom:7px}
+.info-card ul{list-style:none;padding:0}
+.info-card li{font-size:.88rem;color:var(--muted);line-height:1.65;padding:2px 0}
+.info-card li::before{content:"→ ";color:var(--accent2)}
+.refs{border-top:1px solid var(--faint);padding:22px 0 8px}
+.refs-title{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
 .refs p{font-size:.88rem;color:var(--muted);line-height:1.65;margin-bottom:7px;font-family:var(--fb)}
 .divider{border:none;border-top:1px solid var(--faint)}
-.cmts{padding:40px 0 56px}
-.cmts-hd{display:flex;align-items:baseline;gap:10px;margin-bottom:28px}
-.cmts-title{font-family:var(--fd);font-size:1.3rem;font-weight:700;color:var(--text)}
+.cmts{padding:36px 0 52px}
+.cmts-hd{display:flex;align-items:baseline;gap:10px;margin-bottom:24px}
+.cmts-title{font-family:var(--fd);font-size:1.2rem;font-weight:700;color:var(--text)}
 .cmts-n{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--accent)}
-.form-box{background:var(--surface);border:1px solid var(--faint);padding:20px;margin-bottom:32px}
-.lbl{display:block;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
-.inp{width:100%;background:var(--surface2);border:1px solid var(--faint);color:var(--text);font-family:var(--fb);font-size:1rem;padding:9px 12px;outline:none;transition:border-color .2s;margin-bottom:12px;border-radius:0}
+.form-box{background:var(--surface);border:1px solid var(--faint);padding:18px;margin-bottom:28px}
+.lbl{display:block;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
+.inp{width:100%;background:var(--surface2);border:1px solid var(--faint);color:var(--text);font-family:var(--fb);font-size:1rem;padding:8px 12px;outline:none;transition:border-color .2s;margin-bottom:10px;border-radius:0}
 .inp:focus{border-color:var(--accent2)}
-.ta{resize:vertical;min-height:88px}
-.btn{background:var(--accent);color:#0f0e0d;border:none;font-family:var(--fb);font-size:.85rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;padding:10px 24px;cursor:pointer;transition:opacity .18s}
+.ta{resize:vertical;min-height:80px}
+.btn{background:var(--accent);color:#0f0e0d;border:none;font-family:var(--fb);font-size:.83rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;padding:9px 22px;cursor:pointer;transition:opacity .18s}
 .btn:hover{opacity:.82}.btn:disabled{opacity:.35;cursor:not-allowed}
-.cmt{padding:20px 0;border-bottom:1px solid var(--faint);animation:fu .3s ease}
+.cmt{padding:18px 0;border-bottom:1px solid var(--faint);animation:fu .3s ease}
 @keyframes fu{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
-.cmt-author{font-family:var(--fd);font-weight:700;font-size:.98rem;margin-bottom:2px;color:var(--text)}
-.cmt-date{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:9px}
-.cmt-text{font-size:1.02rem;line-height:1.72;color:#c8bfb0;font-family:var(--fb)}
-.empty{color:var(--muted);font-style:italic;padding:14px 0;font-family:var(--fb)}
-.loading-txt{color:var(--muted);font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;padding:14px 0}
-.err{color:#e07070;font-size:.88rem;margin-bottom:10px;font-family:var(--fb)}
-.site-ft{border-top:1px solid var(--faint);padding:18px 0;text-align:center;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.cmt-author{font-family:var(--fd);font-weight:700;font-size:.95rem;margin-bottom:2px;color:var(--text)}
+.cmt-date{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.cmt-text{font-size:1rem;line-height:1.7;color:#c8bfb0;font-family:var(--fb)}
+.empty{color:var(--muted);font-style:italic;padding:12px 0;font-family:var(--fb)}
+.loading-txt{color:var(--muted);font-size:.83rem;letter-spacing:.1em;text-transform:uppercase;padding:12px 0}
+.err{color:#e07070;font-size:.88rem;margin-bottom:8px;font-family:var(--fb)}
+.site-ft{border-top:1px solid var(--faint);padding:16px 0;text-align:center;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
 `;
 
 function fmt(ts) {
@@ -107,33 +123,109 @@ export default function Blog() {
 
         <div className="wrap">
           <div className="art-hd">
-            <div className="art-cat">Ensayo · Narrativas digitales</div>
-            <h1 className="art-title">La pantalla gana, pero no por el espectáculo</h1>
+            <div className="art-cat">Reflexión grupal · Narrativa digital vs. tradicional</div>
+            <h1 className="art-title">¿Leemos igual en pantalla que en papel?</h1>
             <p className="art-lead">
-              Por qué la narrativa digital argumenta mejor que la tradicional —y por qué el universo transmedia de Harry Potter no tiene nada que ver con eso.
+              Las formas de contar historias han cambiado. ¿Cuáles son esas diferencias y cuál formato convence mejor?
             </p>
             <div className="art-meta">
               <span>Grupo colaborativo</span><span className="dot">·</span>
               <span>Abril 2025</span><span className="dot">·</span>
-              <span>7 min de lectura</span>
+              <span>4 min de lectura</span>
             </div>
           </div>
 
           <article className="art-body">
-            <p>La narrativa no nació en los libros. Nació en las paredes de las cavernas, en los gestos rituales de los sacerdotes, en las esculturas que adornaban los templos. Lo que Karbaum (2021) describe como la historia audiovisual de la humanidad es, en esencia, la historia de un impulso irrefrenable: el de contar. Cada época encuentra su soporte, sus tecnologías, sus formatos. Hoy ese soporte es digital, y la pregunta ya no es si la pantalla reemplazó al papel, sino en qué condiciones el nuevo formato supera al anterior como herramienta de argumentación.</p>
-            <p>Mi respuesta es directa: la narrativa digital argumenta mejor. Pero es necesario precisar, porque la afirmación puede malentenderse fácilmente. No porque tenga más recursos visuales, no porque una historia se expanda por diez plataformas distintas, y definitivamente no porque incluya animaciones, gifs o hashtags. La narrativa digital argumenta mejor cuando hace exactamente lo que el texto escrito siempre hizo —construir un razonamiento sólido, verificable y accesible— pero con herramientas que el papel, estructuralmente, jamás podrá replicar.</p>
-            <div className="pull">"La superioridad de la narrativa digital no es automática. Es potencial. Se realiza cuando el escritor asume la disciplina del ensayista tradicional."</div>
-            <h2>El espejismo transmedia</h2>
-            <p>Los textos consultados ofrecen un caso ejemplar: Harry Potter. La saga de Rowling es presentada como el modelo de narrativa transmedia exitosa —libros, películas, Pottermore, fanfictions, cómics, videojuegos, merchandising—. Paredes Otero (2022) señala con razón que este ecosistema genera comunidades, identidades compartidas y una fidelidad sostenida durante más de veinte años. El universo fandom de la saga cumple su función con precisión industrial.</p>
-            <p>Pero hay que ser claros sobre lo que eso es: una estrategia comercial disfrazada de narrativa. La expansión de Harry Potter por múltiples plataformas no profundiza el argumento original de Rowling sobre identidad, lealtad y coraje. Lo fragmenta, lo dosifica y lo convierte en producto de consumo periódico. El lector que navega por Pottermore no está construyendo un argumento más sólido sobre los temas de la obra; está consumiendo derivados de una historia que, en su versión impresa de cuatro mil páginas, ya estaba completa.</p>
-            <p>La narrativa transmedia es poderosa para el entretenimiento, para la fidelización de audiencias y para la expansión comercial de una franquicia. No lo es para la argumentación seria. Confundir el alcance mediático de una saga con su potencia argumentativa es uno de los errores conceptuales más frecuentes en este debate.</p>
-            <h2>¿Qué hace entonces superior a la narrativa digital?</h2>
-            <p>Hay una aparente contradicción en mi postura: valoro la profundidad y el análisis sin distracciones —cualidades que intuitivamente asociamos con el libro físico, con la página en silencio, con la lectura sostenida—. Y sin embargo, sostengo que el formato digital argumenta mejor. La contradicción se resuelve cuando se distingue el soporte del uso que se hace de él.</p>
-            <p>Un texto digital bien construido —con hipervínculos a sus fuentes, con la posibilidad de ser comentado, refutado y actualizado en tiempo real— es epistemológicamente más honesto que un libro impreso. Cuando un argumento en pantalla cita una fuente y el lector puede seguir esa cadena de evidencia en segundos, el razonamiento se vuelve transparente y auditable. El hipertexto no es adorno: es una forma de responsabilidad argumentativa. Además, la narrativa digital democratiza la participación en el debate, eliminando los filtros institucionales que durante siglos controlaron qué voces podían publicarse.</p>
-            <h2>Lo que la pantalla aún le debe al papel</h2>
-            <p>Sería intelectualmente deshonesto no admitirlo: el entorno digital también destruye narrativas. Las redes sociales fragmentan el discurso en unidades de atención mínima. El scroll compulsivo es el enemigo estructural de la profundidad. Los algoritmos premian el impacto emocional sobre el rigor, y la sobreabundancia de información crea una paradoja de acceso: más fuentes disponibles, menor capacidad de síntesis crítica. El libro físico, en cambio, impone por diseño una lectura lineal y sostenida que el lector digital tiene que construir activamente.</p>
-            <h2>Conclusión</h2>
-            <p>La pantalla gana el debate argumentativo, pero no por el espectáculo. Gana por la transparencia que ofrecen los hipervínculos, por la accesibilidad que elimina barreras de distribución, y por la posibilidad de construir conocimiento colectivo en tiempo real —como lo demuestra, en pequeña escala, la sección de comentarios de este mismo blog—. El papel tiene nobleza y ofrece condiciones óptimas para la concentración. Pero es, estructuralmente, un monólogo. La pantalla, cuando se usa con rigor y sin dejarse seducir por el espectáculo transmedia, es un diálogo.</p>
+
+            <p>
+              Desde las pinturas rupestres hasta los reels de Instagram, los seres humanos siempre hemos contado historias. Lo que ha cambiado es el soporte: antes un libro en papel, hoy una pantalla conectada a internet. Pero, ¿eso cambia realmente cómo narramos y cómo argumentamos? La respuesta corta es: sí, y bastante.
+            </p>
+
+            <h2>¿En qué se diferencian la narrativa digital y la tradicional?</h2>
+
+            <p>
+              La narrativa tradicional —la del libro, el periódico, la revista— sigue un camino recto: empiezas en la página uno y llegas al final. El autor decide el orden, el ritmo y lo que merece atención. Por su parte, el lector se sienta con el texto y lo recorre sin interrupciones. Como señala Karbaum (2021), esta forma de narrar ha acompañado a la humanidad durante siglos y tiene una solidez que viene precisamente de eso.
+            </p>
+            <p>
+              La narrativa digital, en cambio, no tiene por qué ir en línea recta: puedes hacer clic en un enlace, ver un video, escuchar un audio o saltar a otro artículo relacionado. Paredes Otero (2022) describe esto como una narrativa transmedia, donde la historia se distribuye por varias plataformas y cada persona arma su propio recorrido. Esto hace que la experiencia sea más rica, aunque también más fácil de perder el hilo.
+            </p>
+
+            <div className="media-box">
+              <div className="media-label">Comparativa rápida</div>
+              <div className="tbl-wrap">
+                <table>
+                  <thead>
+                    <tr><th>Aspecto</th><th>Narrativa tradicional</th><th>Narrativa digital</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Estructura</td><td>Lineal y fija</td><td>Hipertextual, se puede ramificar</td></tr>
+                    <tr><td>Recursos</td><td>Texto e imagen estática</td><td>Video, audio, enlaces, animaciones</td></tr>
+                    <tr><td>Participación</td><td>El lector solo recibe</td><td>El lector puede comentar y compartir</td></tr>
+                    <tr><td>Actualización</td><td>Fija una vez publicada</td><td>Se puede editar en cualquier momento</td></tr>
+                    <tr><td>Concentración</td><td>Favorece la lectura profunda</td><td>Más distracciones, pero más herramientas</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <h2>¿Cuál de los dos formatos argumenta mejor y por qué?</h2>
+
+            <p>
+              En nuestra opinión, la narrativa digital argumenta mejor, aunque con una condición importante: que se use bien. No se trata de poner más colores, más videos o más efectos. Se trata de aprovechar algo que el papel simplemente no puede ofrecer: la posibilidad de mostrar las fuentes al instante.
+            </p>
+
+            <div className="pull">
+              "Cuando lees un argumento en pantalla y puedes verificar la fuente con un clic, la credibilidad del texto cambia completamente."
+            </div>
+
+            <p>
+              En un libro, cuando el autor afirma algo, el lector tiene que creerle —o ir a buscar la fuente aparte, lo que casi nadie hace—. En un texto digital, el enlace está ahí. Esa transparencia hace que el argumento sea más fácil de evaluar. Además, el formato digital permite que cualquier persona pueda responder y entrar al debate sin necesidad de publicar un libro para hacerse escuchar.
+            </p>
+            <p>
+              Sin embargo, también hay que reconocer lo que la narrativa tradicional hace bien. Un libro obliga a concentrarse: no hay notificaciones ni publicidad que distraigan. Esa profundidad es difícil de lograr en pantalla. Por eso, concluimos que el formato digital argumenta mejor en potencia, pero solo cuando el escritor —y el lector— ponen de su parte para no perderse en el ruido.
+            </p>
+
+            <div className="media-box">
+              <div className="media-label">Video recomendado — ¿Qué es la narrativa transmedia?</div>
+              <div className="video-wrap">
+                <iframe
+                  src="https://www.youtube.com/embed/4sbMQILUiAc"
+                  title="Narrativa transmedia"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+
+            <div className="media-box">
+              <div className="media-label">Ventajas de cada formato</div>
+              <div className="info-grid">
+                <div className="info-card">
+                  <div className="info-card-title">Narrativa digital</div>
+                  <ul>
+                    <li>Fuentes verificables al instante</li>
+                    <li>Se actualiza en cualquier momento</li>
+                    <li>Permite la participación del lector</li>
+                    <li>Combina texto, imagen, audio y video</li>
+                    <li>Llega a más personas sin barreras</li>
+                  </ul>
+                </div>
+                <div className="info-card">
+                  <div className="info-card-title">Narrativa tradicional</div>
+                  <ul>
+                    <li>Favorece la concentración profunda</li>
+                    <li>Sin distracciones externas</li>
+                    <li>Estructura clara y predecible</li>
+                    <li>Mayor trayectoria histórica</li>
+                    <li>No depende de conexión a internet</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <p>
+              En conclusión, ambos formatos tienen su valor y no se excluyen entre sí. Si buscamos profundidad y análisis sin interrupciones, el papel es la mejor opción. Si queremos argumentar con transparencia, llegar a más personas y abrir el debate a otros, la pantalla lleva la delantera. Y en un mundo donde todo está conectado, saber usar bien los dos es la habilidad que realmente importa.
+            </p>
+
           </article>
 
           <div className="refs">
@@ -146,28 +238,31 @@ export default function Blog() {
 
           <section className="cmts">
             <div className="cmts-hd">
-              <h2 className="cmts-title">Conversación</h2>
+              <h2 className="cmts-title">¿Tú qué opinas?</h2>
               {!loading && <span className="cmts-n">{comments.length} {comments.length===1?"comentario":"comentarios"}</span>}
             </div>
             <div className="form-box">
               <label className="lbl">Tu nombre</label>
-              <input className="inp" placeholder="¿Quién eres?" value={name} onChange={e=>setName(e.target.value)} />
+              <input className="inp" placeholder="¿Cómo te llamas?" value={name} onChange={e=>setName(e.target.value)} />
               <label className="lbl">Tu comentario</label>
-              <textarea className="inp ta" placeholder="¿Estás de acuerdo? ¿Qué agregarías o rebatirías?" value={text} onChange={e=>setText(e.target.value)} />
+              <textarea className="inp ta" placeholder="¿Estás de acuerdo? ¿Prefieres leer en papel o en pantalla?" value={text} onChange={e=>setText(e.target.value)} />
               {err && <p className="err">{err}</p>}
               <button className="btn" onClick={submit} disabled={sending||!name.trim()||!text.trim()}>
-                {sending?"Publicando…":"Publicar comentario"}
+                {sending ? "Publicando…" : "Publicar comentario"}
               </button>
             </div>
-            {loading ? <div className="loading-txt">Cargando comentarios…</div>
-              : comments.length===0 ? <div className="empty">Sé el primero en comentar este ensayo.</div>
-              : comments.map(c=>(
-                <div key={c.id} className="cmt">
-                  <div className="cmt-author">{c.name}</div>
-                  <div className="cmt-date">{fmt(c.ts)}</div>
-                  <div className="cmt-text">{c.text}</div>
-                </div>
-              ))}
+            {loading
+              ? <div className="loading-txt">Cargando comentarios…</div>
+              : comments.length === 0
+                ? <div className="empty">Sé el primero en dejar tu opinión.</div>
+                : comments.map(c => (
+                  <div key={c.id} className="cmt">
+                    <div className="cmt-author">{c.name}</div>
+                    <div className="cmt-date">{fmt(c.ts)}</div>
+                    <div className="cmt-text">{c.text}</div>
+                  </div>
+                ))
+            }
           </section>
         </div>
 
